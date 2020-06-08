@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>goit-markup-hw-02</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -12,22 +16,33 @@
     <!-- Топ линия -->
     <header>
       <nav>
-        <a href="">Web Studio</a>
-        <ul>
+        <a href="" class="logo"
+          ><span class="logo-firs-half">Web</span>
+          <span class="logo-second-half">Studio</span>
+        </a>
+        <ul class="nav-list">
           <li><a href="./index.html">Студия</a></li>
           <li><a href="">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
-        <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+38-096-111-11-11">+38 096 111 11 11</a></li>
+        <ul class="contacts">
+          <li>
+            <a class="our-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="our-phone" href="tel:+38-096-111-11-11"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- Навигация по странице -->
       <nav>
-        <ul>
+        <ul class="portfolio-nav-list">
           <li><a href="">Все</a></li>
           <li><a href="">Веб-сайты</a></li>
           <li><a href="">Приложения</a></li>
@@ -36,7 +51,7 @@
         </ul>
       </nav>
       <section>
-        <ul>
+        <ul class="portfolio-item-list">
           <li>
             <a href="">
               <img
@@ -44,9 +59,9 @@
                 alt="Технокряк"
                 width="370"
               />
-              <h1>Технокряк</h1>
-              <p>Веб-сайт</p>
-              <p>
+              <p class="portfolio-item-title">Технокряк</p>
+              <p class="portfolio-item-type">Веб-сайт</p>
+              <p class="item-comment">
                 Технокряк это современная площадка распространения коронавируса.
                 Компании используют эту платформу для цифрового шпионажа и атак
                 на защищённые сервера конкурентов.
@@ -60,8 +75,10 @@
                 alt="постер"
                 width="370"
               />
-              <h1>Постер <span lang="en">New Orlean vs Golden Star</span></h1>
-              <p>Дизайн</p>
+              <h1 class="portfolio-item-title">
+                Постер <span lang="en">New Orlean vs Golden Star</span>
+              </h1>
+              <p class="portfolio-item-type">Дизайн</p>
             </a>
           </li>
           <li>
@@ -71,8 +88,10 @@
                 alt="эмблема ресторана"
                 width="370"
               />
-              <h1>Ресторан <span lang="en">Seafood</span></h1>
-              <p>Приложение</p>
+              <h1 class="portfolio-item-title">
+                Ресторан <span lang="en">Seafood</span>
+              </h1>
+              <p class="portfolio-item-type">Приложение</p>
             </a>
           </li>
           <li>
@@ -82,8 +101,10 @@
                 alt="наушники"
                 width="370"
               />
-              <h1>Проект <span lang="en">Prime</span></h1>
-              <p>Маркетинг</p>
+              <h1 class="portfolio-item-title">
+                Проект <span lang="en">Prime</span>
+              </h1>
+              <p class="portfolio-item-type">Маркетинг</p>
             </a>
           </li>
           <li>
@@ -93,8 +114,10 @@
                 alt="коробки"
                 width="370"
               />
-              <h1>Проект <span lang="en">Boxes</span></h1>
-              <p>Приложение</p>
+              <h1 class="portfolio-item-title">
+                Проект <span lang="en">Boxes</span>
+              </h1>
+              <p class="portfolio-item-type">Приложение</p>
             </a>
           </li>
           <li>
@@ -104,8 +127,10 @@
                 alt="монитор"
                 width="370"
               />
-              <h1 lang="en">Inspiration has no Borders</h1>
-              <p>Веб-сайт</p>
+              <h1 class="portfolio-item-title" lang="en">
+                Inspiration has no Borders
+              </h1>
+              <p class="portfolio-item-type">Веб-сайт</p>
             </a>
           </li>
           <li>
@@ -115,8 +140,10 @@
                 alt="журнал"
                 width="370"
               />
-              <h1>Издание <span lang="en">Limited Edition </span></h1>
-              <p>Дизайн</p>
+              <h1 class="portfolio-item-title">
+                Издание <span lang="en">Limited Edition </span>
+              </h1>
+              <p class="portfolio-item-type">Дизайн</p>
             </a>
           </li>
           <li>
@@ -126,8 +153,10 @@
                 alt="лейба"
                 width="370"
               />
-              <h1>Проект <span lang="en">LAB </span></h1>
-              <p>Маркетинг</p>
+              <h1 class="portfolio-item-title">
+                Проект <span lang="en">LAB </span>
+              </h1>
+              <p class="portfolio-item-type">Маркетинг</p>
             </a>
           </li>
           <li>
@@ -137,8 +166,8 @@
                 alt="ноутбук"
                 width="370"
               />
-              <h1 lang="en">Growing Business</h1>
-              <p>Приложение</p>
+              <h1 class="portfolio-item-title" lang="en">Growing Business</h1>
+              <p class="portfolio-item-type">Приложение</p>
             </a>
           </li>
         </ul>
@@ -146,25 +175,28 @@
     </main>
     <!-- Нижняя строка с контактами -->
     <footer>
-      <p>Web Studio</p>
+      <p class="logo">
+        <span class="logo-firs-half">Web</span>
+        <span class="logo-second-half">Studio</span>
+      </p>
       <address>
-        <ul>
+        <ul class="address-list">
           <li>г. Киев, пр-т Леси Украинки, 26</li>
           <li><a href="mailto:info@example.com">info@example.com</a></li>
           <li><a href="tel:+38-099-111-11-11">+38 099 111 11 11</a></li>
         </ul>
       </address>
-      <p>Присоединяйтесь</p>
+      <p class="offer-to-join-us">Присоединяйтесь</p>
       <ul>
         <li><a href="">Instagram</a></li>
         <li><a href="">Twitter</a></li>
         <li><a href="">Facebook</a></li>
         <li><a href="">Linkdin</a></li>
       </ul>
-      <p>Подпишитесь на рассылкуУ</p>
-      <input type="text" placeholder="E-mail" />
-      <a href="">Подписаться</a>
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="offer-to-subscribe">Подпишитесь на рассылку</p>
+      <input class="mail-sign" type="text" placeholder="E-mail" />
+      <a class="subscribe-link" href="">Подписаться</a>
+      <p class="developer-information">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>
